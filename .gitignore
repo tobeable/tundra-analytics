@@ -1,0 +1,27 @@
+# Secrets — never commit credentials
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# SiS deploy copy (not needed for Community Cloud)
+sis/
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Context files (Cortex Code internals)
+.context/
+
+# Generated / temp files
+_customers_for_embed.json

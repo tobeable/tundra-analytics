@@ -1,0 +1,13 @@
+[project]
+name = "tundra-analytics"
+version = "0.1.0"
+description = "Global SaaS Analytics Dashboard"
+requires-python = ">=3.9"
+dependencies = [
+    "streamlit>=1.50",
+    "psycopg2-binary",
+    "snowflake-snowpark-python",
+    "pandas",
+    "plotly>=5.18",
+    "pydeck>=0.9",
+]

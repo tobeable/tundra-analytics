@@ -1,0 +1,6 @@
+streamlit
+psycopg2-binary
+snowflake-snowpark-python
+pandas
+plotly
+pydeck
