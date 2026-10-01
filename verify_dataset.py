@@ -1,10 +1,11 @@
 import psycopg2
+import toml
 
+pg = toml.load(r".streamlit\secrets.toml")["postgres"]
 conn = psycopg2.connect(
-    host='vqr6mmj6ubhxjhbeiejzryqfui.icqrhwu-tw95108.eu-central-1.aws.postgres.snowflake.app',
-    port=5432, dbname='postgres', user='snowflake_admin',
-    password='REDACTED',
-    sslmode='require', connect_timeout=10
+    host=pg["host"], port=pg["port"], dbname=pg["dbname"],
+    user=pg["user"], password=pg["password"],
+    sslmode="require", connect_timeout=10,
 )
 cur = conn.cursor()
 
